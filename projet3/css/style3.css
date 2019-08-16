@@ -1,0 +1,282 @@
+/*fonts*/
+@font-face {
+	font-family: "solitas";
+	src: url('fonts/solitas.otf');
+}
+@font-face {
+	font-family: "MarydaleBlack";
+	src: url('fonts/MarydaleBlack.ttf');
+}
+@font-face {
+	font-family: "Giulia";
+	src: url('fonts/Giulia.otf');
+}
+html{
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #fbe9e7;
+}
+/*header*/
+#navigation {
+  margin: 0 ;
+  padding: 0 ;
+  list-style: none ;
+  text-align: center ;
+}
+#navigation li {
+  display: inline ;
+  margin-right: 1px ;
+}
+#navigation li a {
+  padding: 4px 20px ;
+  color:#f2c11d; ;
+  line-height: 20px;
+  text-align: center ;
+  text-decoration: none ;
+}
+#navigation a:hover{
+	color:#f78383;
+}
+#navigation li.active
+{
+    border-bottom: 5px solid #4f212f;;
+    background-color:#4f212f;
+}
+.menu{
+	display: inline-block;
+	height:135px;
+	width: 100%;
+	text-align:center;
+	line-height:25px;
+	font-size: 1.8em;
+	background-color: #08613e;
+}
+.logo{
+	color:#f2c11d;
+}
+.texte2{
+	margin-top: -30px;
+}
+.texte3{
+	margin-top: 15px;
+}
+/*titre*/
+.titre{
+  margin-top:100px;
+  text-align: center;
+  font-family: 'Giulia';
+  font-size:1.5em;
+  color:#4f212f;
+}
+hr.wrap1{
+    position:relative;
+    top:55px;
+    width: 74%;
+    border-bottom: 2px solid #4f212f;
+
+}
+span.wrap2{
+    position:absolute;
+		font-family:'Giulia';
+		font-weight: bold;
+		font-size:25px;
+    margin:auto;
+    left: 0;
+    right:0;
+    width:300px;
+    text-align: center;
+    background-color: #fbe9e7;
+		color:#4f212f;
+		transform: translateY(30px);
+
+
+}
+/*pour se mettre en appetit*/
+section#mysection{
+	position: relative;
+	font-size: 1em;
+	font-family:'solitas';
+}
+ section#mysection{
+	grid-template-areas:
+	            "plat1 prix1"
+							"plat2 prix2"
+							"plat3 prix3";
+	grid-template-columns: 1fr 1fr;
+  display: grid;
+	grid-gap: 50px;
+	margin: 65px;
+}
+section#mysection{
+	position: relative;
+	font-size: 1em;
+		font-family:'solitas';
+
+}
+.plat1{
+	grid-area: plat1;
+	position: absolute;
+	left:20%;
+}
+.prix1{
+	grid-area: prix1;
+	position: absolute;
+	left: 77.2%;
+
+}
+.plat2{
+	grid-area: plat2;
+	position: absolute;
+	left:20%;
+}
+.prix2{
+	grid-area: prix2;
+	position: absolute;
+	left: 77.2%;
+}
+.plat3{
+	grid-area: plat3;
+	position: absolute;
+	left:20%;
+}
+.prix3{
+	grid-area: prix3;
+	position: absolute;
+	left: 77.2%;
+}
+/*plasire des papilles*/
+
+.texte2{
+	margin-top: -0px;
+}
+/*Gourmandises*/
+/*footer*/
+.mention{
+    transform: translateY(200%);
+		margin-left: 12px;
+}
+.footer{
+	position: relative;
+	margin: auto;
+  margin-top: 165px;
+	height:80px;
+	width: 100%;
+	background-color:#08613e;
+}
+.contactez{
+	position: absolute;
+  right:2%;
+  transform: translateY(106%);
+}
+.wrap{
+  color:#f2c11d;
+
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color:#f78383;
+}
+/*responsive header*/
+@media screen and (max-width: 640px){
+	.menu{
+		font-size: 1.3em;
+		height: 80px;
+	}
+	.music{
+	  position: relative;
+	  font-size: 50px;
+	  left: 45%;
+		transform: translateY(30%);
+	}
+	.sous-titre{
+	  font-size:1.5em;
+	  color:#4f212f;
+	}
+	.texte{
+		margin-top: 30px;
+	}
+  .texte2{
+  	margin-top: 30px;
+  }
+  .texte3{
+  	margin-top:30px;
+  }
+
+}
+
+/*media queries des menus*/
+@media screen and (max-width: 640px){
+	section#mysection{
+ 	grid-template-areas:
+ 	            "plat1 prix1"
+ 				      "plat2 prix2"
+							"plat3 prix3"
+ 							"plat4 prix4";
+ 	grid-template-columns: 1fr ;
+  display: grid;
+ 	grid-gap:50px;
+ 	margin: 55px;
+ }
+ section#mysection{
+ 	position: relative;
+ 	font-size:10px;
+ 	font-family:'solitas';
+	left: -7%;
+
+ }
+}
+/*responsive texte du bas*/
+@media screen and (max-width: 640px){
+	.sous-titre2{
+		text-align: center;
+		transform: translateY(-400%);
+		font-size: 1.2em;
+		color: #4f212f;
+	}
+	.texte-bas{
+		position: relative;
+	}
+	.musique{
+		position: absolute;
+		left: 20%;
+	 	transform: translateY(-360%);
+		font-size: 1.5em;
+	}
+}
+@media screen and (max-width: 640px) {
+	#navigation {
+	  list-style: none ;
+	  text-align: center ;
+	}
+	#navigation li {
+	  display:block ;
+	  margin: 10px ;
+	}
+	#navigation li a {
+	  padding: 4px 20px ;
+	  color:#f2c11d;
+	  text-decoration: none ;
+	}
+	#navigation a:hover{
+		color:#f78383;
+	}
+	#navigation li.active
+	{
+	    border-bottom: 5px solid #4f212f;;
+	    background-color:#4f212f;
+	}
+	.menu{
+		display: inline-block;
+		height:250px;
+		width: 100%;
+		text-align:center;
+		line-height:25px;
+		font-size: 1.5em;
+		background-color: #08613e;
+	}
+}
